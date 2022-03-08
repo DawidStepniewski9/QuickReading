@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickReading", "QuickReading.csproj", "{2B2173D5-4BEE-4BB0-B1D2-A1E57D659184}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickReading", "QuickReading\QuickReading.csproj", "{2B2173D5-4BEE-4BB0-B1D2-A1E57D659184}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickReading.DataAccess", "..\QuickReading.DataAccess\QuickReading.DataAccess.csproj", "{351DB690-C749-45D9-8948-BDDD47AAB4DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickReading.DataAccess", "QuickReading.DataAccess\QuickReading.DataAccess.csproj", "{351DB690-C749-45D9-8948-BDDD47AAB4DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickReading.Models", "..\QuickReading.Models\QuickReading.Models.csproj", "{AE8214AB-7ACD-4DD5-9352-26FB4AA2EFA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickReading.Models", "QuickReading.Models\QuickReading.Models.csproj", "{AE8214AB-7ACD-4DD5-9352-26FB4AA2EFA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
