@@ -49,6 +49,8 @@ namespace QuickReading.DataAccess
                 entity.ToTable("UserTokens");
             });
         }
+
+        public DbSet<Profile> Profiles { get; set; }
     }
 
 }

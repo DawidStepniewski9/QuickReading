@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuickReading.Models
 {
@@ -15,7 +16,9 @@ namespace QuickReading.Models
         public string CreationDate { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public virtual Profile Profile { get; set; }
 
-        //public virtual Profile Profile { get; set; }
+        [ForeignKey("Profile")]
+        public int ProfileId { get; set; }
     }
 }
