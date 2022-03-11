@@ -247,6 +247,16 @@
         "runtime": {
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "QuickReading.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/QuickReading.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuickReading.Utilities.dll": {}
+        }
       }
     }
   },
@@ -733,12 +743,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "QuickReading.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../QuickReading.Utilities/QuickReading.Utilities.csproj",
+      "msbuildProject": "../QuickReading.Utilities/QuickReading.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.14",
-      "Microsoft.EntityFrameworkCore >= 5.0.14"
+      "Microsoft.EntityFrameworkCore >= 5.0.14",
+      "QuickReading.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -767,7 +783,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -804,7 +824,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -23,9 +23,5 @@ namespace QuickReading.Models
 
         public virtual ApplicationUser ApplicationUser { get; set; }
 
-        //[ForeignKey("AspNetUsers")]
-        //public Guid IdentityUserId { get; set; }
-
-
     }
 }

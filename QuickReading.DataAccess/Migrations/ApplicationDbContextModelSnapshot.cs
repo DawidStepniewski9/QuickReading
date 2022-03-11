@@ -283,6 +283,38 @@ namespace QuickReading.DataAccess.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("QuickReading.Models.Exercise", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateOfAdd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DescriptionProfile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Score")
+                        .HasColumnType("real");
+
+                    b.Property<int>("TypeOfGame")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("Exercise");
+                });
+
             modelBuilder.Entity("QuickReading.Models.Profile", b =>
                 {
                     b.Property<int>("Id")
@@ -372,6 +404,15 @@ namespace QuickReading.DataAccess.Migrations
                         .IsRequired();
 
                     b.Navigation("Profile");
+                });
+
+            modelBuilder.Entity("QuickReading.Models.Exercise", b =>
+                {
+                    b.HasOne("QuickReading.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.Navigation("ApplicationUser");
                 });
 
             modelBuilder.Entity("QuickReading.Models.Profile", b =>

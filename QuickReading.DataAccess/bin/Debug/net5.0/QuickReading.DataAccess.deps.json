@@ -1129,10 +1129,16 @@
       "QuickReading.Models/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.14",
-          "Microsoft.EntityFrameworkCore": "5.0.14"
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "QuickReading.Utilities": "1.0.0"
         },
         "runtime": {
           "QuickReading.Models.dll": {}
+        }
+      },
+      "QuickReading.Utilities/1.0.0": {
+        "runtime": {
+          "QuickReading.Utilities.dll": {}
         }
       }
     }
@@ -1858,6 +1864,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "QuickReading.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "QuickReading.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

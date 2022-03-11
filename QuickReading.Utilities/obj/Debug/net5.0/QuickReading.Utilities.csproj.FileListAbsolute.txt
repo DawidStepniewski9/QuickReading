@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\bin\Debug\net5.0\QuickReading.Utilities.deps.json
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\bin\Debug\net5.0\QuickReading.Utilities.dll
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\bin\Debug\net5.0\ref\QuickReading.Utilities.dll
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\bin\Debug\net5.0\QuickReading.Utilities.pdb
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.AssemblyInfo.cs
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.dll
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\ref\QuickReading.Utilities.dll
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Utilities\obj\Debug\net5.0\QuickReading.Utilities.pdb

@@ -1587,13 +1587,24 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.14",
-          "Microsoft.EntityFrameworkCore": "5.0.14"
+          "Microsoft.EntityFrameworkCore": "5.0.14",
+          "QuickReading.Utilities": "1.0.0"
         },
         "compile": {
           "bin/placeholder/QuickReading.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/QuickReading.Models.dll": {}
+        }
+      },
+      "QuickReading.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/QuickReading.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuickReading.Utilities.dll": {}
         }
       }
     }
@@ -5961,6 +5972,11 @@
       "type": "project",
       "path": "../QuickReading.Models/QuickReading.Models.csproj",
       "msbuildProject": "../QuickReading.Models/QuickReading.Models.csproj"
+    },
+    "QuickReading.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../QuickReading.Utilities/QuickReading.Utilities.csproj",
+      "msbuildProject": "../QuickReading.Utilities/QuickReading.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6049,7 +6065,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -51,6 +51,7 @@ namespace QuickReading.DataAccess
         }
 
         public DbSet<Profile> Profiles { get; set; }
+        public DbSet<Exercise> Exercise { get; set; }
     }
 
 }
