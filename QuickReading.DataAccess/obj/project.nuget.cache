@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u+PbPfYCnUDhDPAN2Z7DLQ51PGGwoybJ493S3mdusf1Xbb/U90ztcKxlmn19VAWQrIqgmIYFz6GIZs3mpdss7w==",
+  "dgSpecHash": "kFdJkUf4H3FSHmNxD8bC/yNTQJcEaJcrwctmgF3f7He428SP5qYIWriOCzvgFQNAtBiH++Blhxm/073muxMxwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
+  "projectFilePath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bzyla\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.15\\microsoft.aspnetcore.cryptography.internal.5.0.15.nupkg.sha512",
     "C:\\Users\\bzyla\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.15\\microsoft.aspnetcore.cryptography.keyderivation.5.0.15.nupkg.sha512",

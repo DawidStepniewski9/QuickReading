@@ -6087,11 +6087,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
+      "projectUniqueName": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
       "projectName": "QuickReading.DataAccess",
-      "projectPath": "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
+      "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
       "packagesPath": "C:\\Users\\bzyla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.DataAccess\\obj\\",
+      "outputPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bzyla\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6108,11 +6108,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.Models\\QuickReading.Models.csproj": {
-              "projectPath": "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.Models\\QuickReading.Models.csproj"
+            "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj": {
+              "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj"
             },
-            "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
-              "projectPath": "C:\\Users\\bzyla\\Downloads\\CustomUserManagement.MVC-master\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
+            "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
+              "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
             }
           }
         }

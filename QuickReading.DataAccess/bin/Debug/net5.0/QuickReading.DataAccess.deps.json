@@ -1041,7 +1041,8 @@
       },
       "QuickReading.Models/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.15"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.15",
+          "QuickReading.Utilities": "1.0.0"
         },
         "runtime": {
           "QuickReading.Models.dll": {}
