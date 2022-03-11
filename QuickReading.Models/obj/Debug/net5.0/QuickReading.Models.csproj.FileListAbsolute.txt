@@ -2,6 +2,9 @@ C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\Qu
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\QuickReading.Models.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\ref\QuickReading.Models.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\QuickReading.Models.pdb
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\QuickReading.Utilities.dll
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\QuickReading.Utilities.pdb
+C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.AssemblyInfo.cs
@@ -9,7 +12,3 @@ C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\Qu
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\ref\QuickReading.Models.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.pdb
-C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.csproj.AssemblyReference.cache
-C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\QuickReading.Utilities.dll
-C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\bin\Debug\net5.0\QuickReading.Utilities.pdb
-C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.csproj.CopyComplete

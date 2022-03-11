@@ -1,8 +1,3 @@
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.csproj.AssemblyReference.cache
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.AssemblyInfoInputs.cache
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.AssemblyInfo.cs
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.DataAccess.deps.json
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.DataAccess.runtimeconfig.json
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.DataAccess.runtimeconfig.dev.json
@@ -10,10 +5,15 @@ C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\ref\QuickReading.DataAccess.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.DataAccess.pdb
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.Models.dll
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.Utilities.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.Models.pdb
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.Utilities.pdb
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.AssemblyInfo.cs
+C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\ref\QuickReading.DataAccess.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.pdb
 C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\obj\Debug\net5.0\QuickReading.DataAccess.genruntimeconfig.cache
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.Utilities.dll
-C:\Users\Admin\source\repos\QuickReading\QuickReading.DataAccess\bin\Debug\net5.0\QuickReading.Utilities.pdb
