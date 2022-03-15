@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
         "projectName": "QuickReading.DataAccess",
-        "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\bzyla\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.DataAccess\\QuickReading.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bzyla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj": {
-                "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj"
+              "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj"
               },
-              "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
-                "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
+              "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
               }
             }
           }
@@ -79,21 +79,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj",
         "projectName": "QuickReading.Models",
-        "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj",
-        "packagesPath": "C:\\Users\\bzyla\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Models\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Models\\QuickReading.Models.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bzyla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,8 +107,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
-                "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
+              "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj"
               }
             }
           }
@@ -143,21 +143,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj",
         "projectName": "QuickReading.Utilities",
-        "projectPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj",
-        "packagesPath": "C:\\Users\\bzyla\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekty\\QuickReading\\QuickReading\\QuickReading.Utilities\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\QuickReading.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuickReading\\QuickReading.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bzyla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -197,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }
