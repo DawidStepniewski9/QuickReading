@@ -1,0 +1,22 @@
+﻿.div-table {
+    display: table;
+    background-color: gainsboro;
+    border: 1px solid black;
+    width: auto;
+}
+
+.div-table-row
+{
+    display:table-row;
+    width: auto;
+    clear:both;
+}
+
+.div-table-col {
+    float: left;
+    width: 30px;
+    display: table-column;
+    text-align: center;
+    border: 1px solid black;
+    cursor:pointer;
+}

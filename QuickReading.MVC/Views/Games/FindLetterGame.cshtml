@@ -1,0 +1,15 @@
+﻿@using QuickReading.Models.Models.Games.FindLetter
+@model FindLetterModel
+
+<h2>Letter: @Model.Letter</h2>
+<div class="div-table">
+    @for (int i = 0; i < Model.ArraySize; i++)
+    {
+    <div class="div-table-row">
+        @for (int j = 0; j < Model.ArraySize; j++)
+        {
+        <div class="div-table-col">@Model.ArrayLetter[i, j] </div>
+        }
+    </div>
+    }
+</div>
