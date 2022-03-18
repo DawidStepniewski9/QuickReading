@@ -7,3 +7,8 @@
 Find Letter
 
 Opis i tak dalej
+
+<h2>Wybierz poziom trudności</h2>
+<a href="@Url.Action("FindLetterGame","Games", new {tableSize=8})" ><button class="btn btn-primary">Łatwy</button></a>
+<a href="@Url.Action("FindLetterGame","Games", new {tableSize=15})" ><button class="btn btn-primary">Średni</button></a>
+<a href="@Url.Action("FindLetterGame","Games", new {tableSize=25})" ><button class="btn btn-primary">Wysoki</button></a>

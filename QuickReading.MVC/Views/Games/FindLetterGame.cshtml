@@ -1,12 +1,26 @@
 ﻿@using QuickReading.Models.Models.Games.FindLetter
 @model FindLetterModel
 
-<h2>Letter: @Model.Letter</h2>
+<h2>Letter: <span id="searchLetter">@Model.Letter</span></h2>
+<h3>To find: <span id="countLetters">@Model.CountSearchLetter</span></h3>
+<h4>
+    Time: <span id="minutes"></span>:<span id="seconds"></span>
+</h4>
 
-@for(int i=0;i< Model.ArraySize; i++)
-{
-    for(int j=0;j < Model.ArraySize; j++) {
-        <div class="letterItem">@Model.ArrayLetter[i,j] </div>
+<br />
+<div class="div-table">
+    @for (int i = 0; i < Model.ArraySize; i++)
+    {
+        <div class="div-table-row">
+            @for (int j = 0; j < Model.ArraySize; j++)
+            {
+                <div class="div-table-col">@Model.ArrayLetter[i, j]</div>
+            }
+        </div>
     }
-    <br />
-}
+</div>
+
+@*<div class="endGame">
+    <form action="@Url.Action("EndFindLetterGame","Games") 
+    <a href="@Url.Action("EndFindLetterGame","Games")"><button class="btn btn-primary">Zakończ</button></a>
+</div>*@

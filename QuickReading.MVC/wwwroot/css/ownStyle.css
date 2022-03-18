@@ -1,6 +1,27 @@
-﻿.letterItem {
+﻿.div-table {
+    display: table;
+    background-color: gainsboro;
+    border: 1px solid black;
+    width: auto;
+}
+
+.div-table-row {
+    display: table-row;
+    width: auto;
+    clear: both;
+}
+
+.div-table-col {
     float: left;
     width: 30px;
-    height: 30px;
-    position: relative;
+    display: table-column;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.endGame
+{
+    display:none;
+    margin-top:50px;
 }

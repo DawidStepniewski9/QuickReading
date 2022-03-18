@@ -14,23 +14,45 @@ namespace QuickReading.MVC.Controllers
             return View();
         }
 
-        public IActionResult FindLetterGame()
+        public IActionResult FindLetterGame(int tableSize)
         {
-            int arraySize = 20;
-            FindLetterModel model = new FindLetterModel();
-            model.Letter = GetRandomLetter();
-            model.ArrayLetter = new char[arraySize, arraySize];
-            model.ArraySize = arraySize;
-
-            for(int i=0;i< arraySize; i++)
+            if (tableSize > 0)
             {
-                for(int j=0;j<arraySize;j++)
+                int arraySize = tableSize;
+                int countToSearchLetter = 0;
+                char letter;
+                FindLetterModel model = new FindLetterModel();
+                model.Letter = GetRandomLetter();
+                model.ArrayLetter = new char[arraySize, arraySize];
+                model.ArraySize = arraySize;
+
+                for (int i = 0; i < arraySize; i++)
                 {
-                    model.ArrayLetter[i, j] = GetRandomLetter();
+                    for (int j = 0; j < arraySize; j++)
+                    {
+                        letter = GetRandomLetter();
+                        model.ArrayLetter[i, j] = letter;
+
+                        if (letter == model.Letter)
+                        {
+                            countToSearchLetter++;
+                        }
+                    }
                 }
+
+                model.CountSearchLetter = countToSearchLetter;
+                return View(model);
             }
 
-            return View(model);
+            else
+                return RedirectToActionPermanent("FindLetter");
+        }
+
+        [HttpPost]
+        public IActionResult EndFindLetterGame(string time, string lettersToFind, string level)
+        {
+            //zapisywanie do bazy;
+            return View();
         }
 
         private char GetRandomLetter()

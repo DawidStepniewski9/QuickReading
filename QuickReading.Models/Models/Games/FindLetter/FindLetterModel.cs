@@ -12,5 +12,6 @@ namespace QuickReading.Models.Models.Games.FindLetter
         public char[,] ArrayLetter { get; set; }
 
         public int ArraySize { get; set; }
+        public int CountSearchLetter { get; set; }
     }
 }
