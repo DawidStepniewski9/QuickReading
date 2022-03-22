@@ -12,6 +12,8 @@ document.querySelectorAll('.div-table-col')
                 clearInterval(timer);
 
                 document.querySelector('.endGame').style.display = 'block';
+                $('input[name="minutes"]').val($("#minutes").html());
+                $('input[name="seconds"]').val($("#seconds").html());
             }
         }
         else {

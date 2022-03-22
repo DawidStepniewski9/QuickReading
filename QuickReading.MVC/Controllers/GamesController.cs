@@ -49,8 +49,11 @@ namespace QuickReading.MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult EndFindLetterGame(string time, string lettersToFind, string level)
+        public IActionResult EndFindLetterGame(FindLetterSubmitModel model)
         {
+            int wholeSeconds = model.seconds + model.minutes * 60;
+
+            float score = (wholeSeconds / model.numbernumberLetters)*model.arraySize;
             //zapisywanie do bazy;
             return View();
         }

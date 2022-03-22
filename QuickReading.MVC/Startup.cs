@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using QuickReading.DataAccess.Repository;
+using QuickReading.DataAccess.Repository.IRepository;
 using QuickReading.MVC.Data;
 using QuickReading.MVC.Models;
 
@@ -29,6 +31,7 @@ namespace QuickReading.MVC
             .AddDefaultTokenProviders();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
