@@ -8,6 +8,7 @@ namespace QuickReading.DataAccess.Repository.IRepository
 {
     public interface IUnitOfWork
     {
+        IExerciseRepository Exercise { get; }
         void Save();
     }
 }

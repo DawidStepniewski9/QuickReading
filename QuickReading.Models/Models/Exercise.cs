@@ -23,5 +23,7 @@ namespace QuickReading.MVC.Models
 
         public string DescriptionProfile { get; set; }
 
+        //public ApplicationUser ApplicationUser { get; set; }
+
     }
 }

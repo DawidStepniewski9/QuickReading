@@ -10,7 +10,7 @@ namespace QuickReading.Models.Models.Games.FindLetter
     {
         public int seconds { get; set; }
         public int minutes { get; set; }
-        public int numbernumberLetters { get; set; }
+        public int numberLetters { get; set; }
         public int arraySize { get; set; }
     }
 }
