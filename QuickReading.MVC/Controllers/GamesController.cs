@@ -68,7 +68,7 @@ namespace QuickReading.MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult EndFindLetterGame(FindLetterSubmitModel model)
+        public async Task<IActionResult> EndFindLetterGame(FindLetterSubmitModel model)
         {
             int wholeSeconds = model.seconds + model.minutes * 60;
 
@@ -79,6 +79,7 @@ namespace QuickReading.MVC.Controllers
             exercise.DateOfAdd = DateTime.Now;
             exercise.Score = score;
             exercise.TypeOfGame = Utilities.Enums.TypeOfGame.FindLetter;
+            exercise.ApplicationUser = await _userManager.GetUserAsync(HttpContext.User);
 
             _unitOfWork.Exercise.Add(exercise);
             _unitOfWork.Save();
