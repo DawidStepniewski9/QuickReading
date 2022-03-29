@@ -13,11 +13,12 @@
 
 .div-table-col {
     float: left;
-    width: 30px;
+    min-width: 30px;
     display: table-column;
     text-align: center;
     border: 1px solid black;
     cursor: pointer;
+    min-height:30px;
 }
 
 .endGame

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using QuickReading.DataAccess.Repository.IRepository;
 using QuickReading.Models.Models.Games.FindLetter;
 using QuickReading.MVC.Models;
+using QuickReading.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace QuickReading.MVC.Controllers
 {
-    public class GamesController : Controller
+    public partial class GamesController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly UserManager<ApplicationUser> _userManager;
@@ -53,10 +54,8 @@ namespace QuickReading.MVC.Controllers
 
                 if(countToSearchLetter==0)
                 {
-                    Random random = new Random();
-                    int x = random.Next(0, tableSize - 1);
-                    int y = random.Next(0, tableSize - 1);
-                    model.ArrayLetter[x, y] = model.Letter;
+                    var newPoint = RandomGenerator.GetRandomPoint(tableSize);
+                    model.ArrayLetter[newPoint.x, newPoint.y] = model.Letter;
                 }
 
                 model.CountSearchLetter = countToSearchLetter;

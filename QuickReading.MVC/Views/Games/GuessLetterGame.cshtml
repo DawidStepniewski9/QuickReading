@@ -1,0 +1,32 @@
+﻿@using QuickReading.Models.Models.Games.GuessLetter
+@model GuessLetterModel
+
+<form action="@Url.Action("EndFindLetterGame","Games")" method="post">
+    <h2>Letter: <span id="searchLetter">@Model.Letter</span></h2>
+    <h3>To find: <span id="countLetters">@Model.CountSearchLetter</span></h3>
+    <h4>
+        Time: <span id="minutes"></span>:<span id="seconds"></span>
+    </h4>
+
+    <br />
+    <div class="div-table">
+        @for (int i = 0; i < Model.ArraySize; i++)
+        {
+            <div class="div-table-row">
+                @for (int j = 0; j < Model.ArraySize; j++)
+                {
+                    <div class="div-table-col">@Model.ArrayLetter[i, j]</div>
+                }
+            </div>
+        }
+    </div>
+
+
+    <input type="hidden" id="minutespost" name="minutes"/>
+    <input type="hidden" id="secondspost" name="seconds"/>
+    <input type="hidden" id="numberLetterpost" name="numberLetters" value="@Model.CountSearchLetter"/>
+    <input type="hidden" id="arraySize" name="arraySize" value="@Model.ArraySize"/>
+    <div class="endGame">
+    <button type="submit" class="btn btn-primary">Zakończ</button>
+    </div>
+</form>
