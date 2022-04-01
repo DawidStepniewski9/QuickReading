@@ -25,14 +25,17 @@ namespace QuickReading.MVC.Controllers
                 if(tableSize<10)
                 {
                     countToFindLetters = 1;
+                    model.CountSearchLetter = 1;
                 }
                 if (tableSize >= 10 && tableSize<30)
                 {
                     countToFindLetters = 3;
+                    model.CountSearchLetter = 3;
                 }
                 if (tableSize >= 30)
                 {
                     countToFindLetters = 5;
+                    model.CountSearchLetter = 5;
                 }
 
                 for (int i = 0; i < arraySize; i++)

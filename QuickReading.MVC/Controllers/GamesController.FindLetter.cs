@@ -56,6 +56,7 @@ namespace QuickReading.MVC.Controllers
                 {
                     var newPoint = RandomGenerator.GetRandomPoint(tableSize);
                     model.ArrayLetter[newPoint.x, newPoint.y] = model.Letter;
+                    countToSearchLetter++;
                 }
 
                 model.CountSearchLetter = countToSearchLetter;

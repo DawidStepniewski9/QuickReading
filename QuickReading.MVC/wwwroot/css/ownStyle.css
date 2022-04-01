@@ -21,6 +21,16 @@
     min-height:30px;
 }
 
+.div-table-col-guess {
+    float: left;
+    min-width: 40px;
+    display: table-column;
+    text-align: center;
+    cursor: pointer;
+    min-height: 40px;
+    font-size:36px;
+}
+
 .endGame
 {
     display:none;
