@@ -9,6 +9,8 @@ using QuickReading.DataAccess.Repository;
 using QuickReading.DataAccess.Repository.IRepository;
 using QuickReading.MVC.Data;
 using QuickReading.MVC.Models;
+using QuickReading.Utilities.API;
+using QuickReading.Utilities.API.Interface;
 
 namespace QuickReading.MVC
 {
@@ -32,6 +34,7 @@ namespace QuickReading.MVC
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddHttpClient<IWordsApiService, WordsApiService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
