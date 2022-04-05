@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickReading.Models.Models.Games.FindLetter
+namespace QuickReading.Models.Models.Games
 {
-    public class FindLetterSubmitModel
+    public class GameSubmitModel
     {
         public int seconds { get; set; }
         public int minutes { get; set; }

@@ -1,7 +1,7 @@
 ﻿@using QuickReading.Models.Models.Games.GuessLetter
 @model GuessLetterModel
 
-<form action="@Url.Action("EndFindLetterGame","Games")" method="post">
+<form action="@Url.Action("EndGuessLetterGame","Games")" method="post">
     <h3>To find: <span id="countLetters">@Model.CountSearchLetter</span></h3>
     <h4>
         Time: <span id="minutes"></span>:<span id="seconds"></span>
@@ -33,19 +33,29 @@
 @section Scripts {
     <script>
         var countLettersDiv = document.querySelector('#countLetters');
+        var keys = [
+            "background", "backgroundColor", "backgroundUrl" // ...
+        ];
 
         $("#checkButton").click(function () {
             var checkLetter = $("#inputLetter").val();
-            var searchLetter = $(".div-table-col-guess:contains('" + checkLetter + "')");
-            if (searchLetter) {
+            var searchLetter = $(".div-table-col-guess:contains('" + checkLetter.toUpperCase() + "')");
+            if (searchLetter && searchLetter.css('background-color') != 'rgb(0, 128, 0)' && checkLetter!='') {
                 searchLetter.css("background-color", "green");
+                countLettersDiv.innerHTML = countLettersDiv.innerHTML - 1;
+            }
+
+            if (countLettersDiv.innerHTML == 0) {
+                clearInterval(timer);
+                document.querySelector('.endGame').style.display = 'block';
+                $('input[name="minutes"]').val($("#minutes").html());
+                $('input[name="seconds"]').val($("#seconds").html());
             }
             
 
-
+            $("#inputLetter").val('');
         })
 
-        //clearInterval(timer);
         var sec = 0;
         function pad(val) { return val > 9 ? val : "0" + val; }
         var timer = setInterval(function () {

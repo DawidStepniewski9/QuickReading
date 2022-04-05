@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using QuickReading.Models.Models.Games;
 using QuickReading.Models.Models.Games.GuessLetter;
+using QuickReading.MVC.Models;
 using QuickReading.Utilities;
 using System;
+using System.Threading.Tasks;
 
 namespace QuickReading.MVC.Controllers
 {
@@ -70,6 +73,26 @@ namespace QuickReading.MVC.Controllers
 
             else
                 return RedirectToActionPermanent("GuessLetter");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EndGuessLetterGame(GameSubmitModel model)
+        {
+            int wholeSeconds = model.seconds + model.minutes * 60;
+
+            float score = (wholeSeconds / model.numberLetters) * model.arraySize;
+            //zapisywanie do bazy;
+
+            Exercise exercise = new Exercise();
+            exercise.DateOfAdd = DateTime.Now;
+            exercise.Score = score;
+            exercise.TypeOfGame = Utilities.Enums.TypeOfGame.GuessLetter;
+            exercise.ApplicationUser = await _userManager.GetUserAsync(HttpContext.User);
+
+            _unitOfWork.Exercise.Add(exercise);
+            _unitOfWork.Save();
+
+            return View();
         }
 
         public bool CheckAvability(string[,] array, int tableSize, RandomPoint p)

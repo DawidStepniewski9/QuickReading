@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using QuickReading.DataAccess.Repository.IRepository;
+using QuickReading.Models.Models.Games;
 using QuickReading.Models.Models.Games.FindLetter;
 using QuickReading.MVC.Models;
 using QuickReading.Utilities;
@@ -68,7 +69,7 @@ namespace QuickReading.MVC.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EndFindLetterGame(FindLetterSubmitModel model)
+        public async Task<IActionResult> EndFindLetterGame(GameSubmitModel model)
         {
             int wholeSeconds = model.seconds + model.minutes * 60;
 
