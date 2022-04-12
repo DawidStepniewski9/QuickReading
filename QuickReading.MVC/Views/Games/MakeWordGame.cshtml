@@ -1,0 +1,35 @@
+﻿@using QuickReading.Models.Models.Games.MakeWord
+@model MakeWordModel
+
+<form action="@Url.Action("EndMakeWordGame","Games")" method="post">
+    <h3>@Model.Word</h3>
+    <h3>@Model.Translation</h3>
+    <h4>
+        Time: <span id="minutes"></span>:<span id="seconds"></span>
+    </h4>
+
+    <br />
+
+    <br />
+    <br />
+    @foreach(var word in Model.Words)
+    {
+        <div>
+            @foreach(char c in word)
+            {
+            <span>@c</span>
+            }
+        </div>
+    }
+
+
+    <input type="text" id="inputLetter" /> <button type="button" id="checkButton">Check</button>
+
+    <input type="hidden" id="minutespost" name="minutes" />
+    <input type="hidden" id="secondspost" name="seconds" />
+    <div class="endGame">
+        <button type="submit" class="btn btn-primary">Zakończ</button>
+    </div>
+</form>
+@section Scripts {
+}

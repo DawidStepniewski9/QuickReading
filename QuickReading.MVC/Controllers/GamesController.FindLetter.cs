@@ -13,15 +13,7 @@ using System.Threading.Tasks;
 namespace QuickReading.MVC.Controllers
 {
     public partial class GamesController : Controller
-    {
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly UserManager<ApplicationUser> _userManager;
-
-        public GamesController(IUnitOfWork unitOfWork, UserManager<ApplicationUser> userManager)
-        {
-            _unitOfWork = unitOfWork;
-            _userManager = userManager;
-        }
+    {       
         public IActionResult FindLetter()
         {
             return View();

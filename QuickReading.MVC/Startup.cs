@@ -35,6 +35,7 @@ namespace QuickReading.MVC
             services.AddRazorPages();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddHttpClient<IWordsApiService, WordsApiService>();
+            services.AddHttpClient<ITranslateService, TranslateService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
