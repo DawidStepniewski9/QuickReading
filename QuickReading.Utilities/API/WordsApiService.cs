@@ -12,7 +12,7 @@ namespace QuickReading.Utilities.API
     public class WordsApiService : IWordsApiService
     {
         private readonly HttpClient _httpClient;
-        private readonly string UrlWordsApi = "https://random-word-api.herokuapp.com";
+        private readonly string UrlWordsApi = "https://words-aas.vercel.app/api/";
         public WordsApiService(HttpClient httpClient)
         {
             _httpClient = httpClient;
@@ -21,7 +21,7 @@ namespace QuickReading.Utilities.API
 
         public async Task<string> GetWord()
         {
-            var getWord = await _httpClient.GetAsync($"word?number=1");
+            var getWord = await _httpClient.GetAsync($"$bodyPart");
 
             if(!getWord.IsSuccessStatusCode && getWord.StatusCode != System.Net.HttpStatusCode.NotFound)
             {
@@ -29,25 +29,16 @@ namespace QuickReading.Utilities.API
             }
 
             string getWordsResults = await getWord.Content.ReadAsStringAsync();
-            string result = JsonConvert.DeserializeObject<List<string>>(getWordsResults).FirstOrDefault();
+            string result = JsonConvert.DeserializeObject<ReturnEnglishWordModel>(getWordsResults).phrase;
 
             return result;
 
         }
 
-        public async Task<List<string>> GetWords(int number)
-        {
-            var getWord = await _httpClient.GetAsync($"word?number={number}");
+    }
 
-            if (!getWord.IsSuccessStatusCode && getWord.StatusCode != System.Net.HttpStatusCode.NotFound)
-            {
-                return new List<string>();
-            }
-
-            string getWordsResults = await getWord.Content.ReadAsStringAsync();
-            List<string> result = JsonConvert.DeserializeObject<List<string>>(getWordsResults);
-
-            return result;
-        }
+    public class ReturnEnglishWordModel
+    {
+        public string phrase { get; set; }
     }
 }

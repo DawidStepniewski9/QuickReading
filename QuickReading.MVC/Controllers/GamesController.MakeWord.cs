@@ -20,28 +20,64 @@ namespace QuickReading.MVC.Controllers
 
         public async Task<IActionResult> MakeWordGame(int numberOfWords)
         {
-            string word = await _wordsApiService.GetWord();
+            
             MakeWordModel model = new MakeWordModel();
-            model.Word = word;
-            model.Words = new List<string>();
-            string translationWord = await _translateService.GetTranslation(word);
-            model.Translation = translationWord;
+            model.GroupsOfWords = await PrepareListWords(numberOfWords);
+            model.NumberOfWords = numberOfWords;
 
-            Random r = new Random();
-
-            string mixedWord = new string(translationWord.ToCharArray().
-                OrderBy(s => (r.Next(2) % 2) == 0).ToArray());
-
-            model.Words.Add(mixedWord);
-
-            for(int i=0;i< numberOfWords-1;i++)
-            {
-                model.Words.Add(Randomize.Word(translationWord.Length));
-            }
-
-            model.Words.Shuffle();
 
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EndMakeWordGame(GameSubmitModel model)
+        {
+            int wholeSeconds = model.seconds + model.minutes * 60;
+
+            float score = (wholeSeconds / model.arraySize) - model.numberLetters;
+            //zapisywanie do bazy;
+
+            Exercise exercise = new Exercise();
+            exercise.DateOfAdd = DateTime.Now;
+            exercise.Score = score;
+            exercise.TypeOfGame = Utilities.Enums.TypeOfGame.MakeWords;
+            exercise.ApplicationUser = await _userManager.GetUserAsync(HttpContext.User);
+
+            _unitOfWork.Exercise.Add(exercise);
+            _unitOfWork.Save();
+
+            return View();
+        }
+
+        private async Task<List<List<MakeWordItemModel>>> PrepareListWords(int size)
+        {
+            string word, translationWord, mixedWord;
+            Random r = new Random();
+            List<List<MakeWordItemModel>> result = new List<List<MakeWordItemModel>>();
+
+            for(int i=0;i<5;i++)
+            {
+                List<MakeWordItemModel> groupList = new List<MakeWordItemModel>();
+
+                word = await _wordsApiService.GetWord();
+                translationWord = await _translateService.GetTranslation(word);
+                mixedWord = new string(translationWord.ToCharArray().
+                OrderBy(s => (r.Next(2) % 2) == 0).ToArray());
+
+                groupList.Add(new MakeWordItemModel(mixedWord.ToUpper(),true));
+
+                for (int j = 0; j < size - 1; j++)
+                {
+                    groupList.Add(new MakeWordItemModel(Randomize.Word(translationWord.Length),false));
+                }
+
+                groupList.Shuffle();
+
+                result.Add(groupList);
+
+            }
+
+            return result;
         }
 
     }

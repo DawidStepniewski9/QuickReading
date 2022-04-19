@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace QuickReading.Models.Models.Games.MakeWord
 {
-    public class MakeWordModel
+    public class MakeWordItemModel
     {
         public string Word { get; set; }
-        public string Translation { get; set; }
-        public int NumberOfWords { get; set; }
-        public List<List<MakeWordItemModel>> GroupsOfWords { get; set; }
+        public bool Answer { get; set; }
+
+        public MakeWordItemModel(string _word, bool _answer)
+        {
+            Word = _word;
+            Answer = _answer;
+        }
     }
 }

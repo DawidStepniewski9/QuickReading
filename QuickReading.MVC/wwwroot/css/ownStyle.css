@@ -36,3 +36,21 @@
     display:none;
     margin-top:50px;
 }
+
+div.rowMakeWord {
+    border: 3px black solid;
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    z-index:10;
+    cursor:pointer;
+}
+
+    div.rowMakeWord span {
+        font-size: 25px;
+        z-index:-1;
+    }
+
+div.groupMakeWord {
+    margin-bottom: 35px;
+}

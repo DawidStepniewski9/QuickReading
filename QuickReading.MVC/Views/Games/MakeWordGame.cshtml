@@ -2,8 +2,6 @@
 @model MakeWordModel
 
 <form action="@Url.Action("EndMakeWordGame","Games")" method="post">
-    <h3>@Model.Word</h3>
-    <h3>@Model.Translation</h3>
     <h4>
         Time: <span id="minutes"></span>:<span id="seconds"></span>
     </h4>
@@ -12,24 +10,57 @@
 
     <br />
     <br />
-    @foreach(var word in Model.Words)
+    @foreach (var list in Model.GroupsOfWords)
     {
-        <div>
-            @foreach(char c in word)
+        <div class="groupMakeWord">
+            @foreach (var word in list)
             {
-            <span>@c</span>
+                <div class="rowMakeWord @word.Answer.ToString().ToLower()">
+                    @foreach (char c in word.Word)
+                    {
+                        <span>@c</span>
+                    }
+                </div>
             }
         </div>
     }
 
 
-    <input type="text" id="inputLetter" /> <button type="button" id="checkButton">Check</button>
-
     <input type="hidden" id="minutespost" name="minutes" />
     <input type="hidden" id="secondspost" name="seconds" />
+    <input type="hidden" id="arraySize" name="arraySize" value="@Model.NumberOfWords" />
+    <input type="hidden" id="failClicked" name="numberLetters" />
     <div class="endGame">
         <button type="submit" class="btn btn-primary">Zakończ</button>
     </div>
 </form>
 @section Scripts {
+    <script>
+        var itemGuess = 0;
+        var failClicked = 0;
+        $(".rowMakeWord").click(function (e) {
+            if ($(e.target).hasClass('true')) {
+                $(e.target).css("background-color", "green");
+                itemGuess = itemGuess + 1;
+            }
+            else {
+                failClicked = failClicked + 1;
+            }
+
+            if (itemGuess == 5) {
+                clearInterval(timer);
+                document.querySelector('.endGame').style.display = 'block';
+                $('input[name="minutes"]').val($("#minutes").html());
+                $('input[name="seconds"]').val($("#seconds").html());
+                $('input[name="numberLetters"]').val(failClicked);
+            }
+        })
+
+        var sec = 0;
+        function pad(val) { return val > 9 ? val : "0" + val; }
+        var timer = setInterval(function () {
+            $("#seconds").html(pad(++sec % 60));
+            $("#minutes").html(pad(parseInt(sec / 60, 10)));
+        }, 1000);
+    </script>
 }
