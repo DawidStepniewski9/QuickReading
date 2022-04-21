@@ -39,4 +39,3 @@ C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\Qu
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\ref\QuickReading.Models.dll
 C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.pdb
-C:\Users\Admin\source\repos\QuickReading\QuickReading.Models\obj\Debug\net5.0\QuickReading.Models.csproj.CopyComplete

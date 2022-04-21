@@ -54,3 +54,10 @@ div.rowMakeWord {
 div.groupMakeWord {
     margin-bottom: 35px;
 }
+
+div.answer {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}

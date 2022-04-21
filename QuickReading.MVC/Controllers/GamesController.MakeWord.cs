@@ -49,18 +49,20 @@ namespace QuickReading.MVC.Controllers
             return View();
         }
 
-        private async Task<List<List<MakeWordItemModel>>> PrepareListWords(int size)
+        private async Task<List<MakeWordList>> PrepareListWords(int size)
         {
             string word, translationWord, mixedWord;
             Random r = new Random();
-            List<List<MakeWordItemModel>> result = new List<List<MakeWordItemModel>>();
+            List<MakeWordList> result = new List<MakeWordList>();
 
             for(int i=0;i<5;i++)
             {
+                MakeWordList list = new MakeWordList();
                 List<MakeWordItemModel> groupList = new List<MakeWordItemModel>();
 
                 word = await _wordsApiService.GetWord();
                 translationWord = await _translateService.GetTranslation(word);
+                list.AnswerWord = translationWord.ToLower();
                 mixedWord = new string(translationWord.ToCharArray().
                 OrderBy(s => (r.Next(2) % 2) == 0).ToArray());
 
@@ -73,7 +75,9 @@ namespace QuickReading.MVC.Controllers
 
                 groupList.Shuffle();
 
-                result.Add(groupList);
+                list.list = groupList;
+
+                result.Add(list);
 
             }
 

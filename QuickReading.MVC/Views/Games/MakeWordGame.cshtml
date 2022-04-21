@@ -12,8 +12,9 @@
     <br />
     @foreach (var list in Model.GroupsOfWords)
     {
+        <div class="answer">@list.AnswerWord</div>
         <div class="groupMakeWord">
-            @foreach (var word in list)
+            @foreach (var word in list.list)
             {
                 <div class="rowMakeWord @word.Answer.ToString().ToLower()">
                     @foreach (char c in word.Word)
