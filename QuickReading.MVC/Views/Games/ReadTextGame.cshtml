@@ -1,0 +1,42 @@
+﻿@using QuickReading.Models.Models.Games.ReadText
+@model ReadTextModel
+
+<form action="@Url.Action("EndReadTextGame","Games")" method="post">
+    <h4>
+        Time: <span id="minutes"></span>:<span id="seconds"></span>
+    </h4>
+
+    <br />
+
+    <br />
+    <br />
+
+    <p>@Model.BookText</p>
+    
+    <br />
+    <a href="#" class="stop bg-light">STOP</a>
+    <input type="hidden" id="minutespost" name="minutes" />
+    <input type="hidden" id="secondspost" name="seconds" />
+    <input type="hidden" id="arraySize" name="arraySize" value="" />
+    <input type="hidden" id="failClicked" name="numberLetters" />
+    <div class="endGame">
+        <button type="submit" class="btn btn-primary">Zakończ</button>
+    </div>
+</form>
+@section Scripts {
+    <script>
+        $(".stop").click(function (e) {
+            clearInterval(timer);
+            document.querySelector('.endGame').style.display = 'block';
+            $('input[name="minutes"]').val($("#minutes").html());
+            $('input[name="seconds"]').val($("#seconds").html());
+        })
+
+        var sec = 0;
+        function pad(val) { return val > 9 ? val : "0" + val; }
+        var timer = setInterval(function () {
+            $("#seconds").html(pad(++sec % 60));
+            $("#minutes").html(pad(parseInt(sec / 60, 10)));
+        }, 1000);
+    </script>
+}

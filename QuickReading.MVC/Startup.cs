@@ -36,6 +36,7 @@ namespace QuickReading.MVC
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddHttpClient<IWordsApiService, WordsApiService>();
             services.AddHttpClient<ITranslateService, TranslateService>();
+            services.AddHttpClient<IBookApiService, BookApiService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -10,6 +10,6 @@ namespace QuickReading.Utilities.Enums
         FindLetter = 1,
         GuessLetter = 2,
         MakeWords = 3,
-        TimeRead = 4
+        ReadText = 4
     }
 }
