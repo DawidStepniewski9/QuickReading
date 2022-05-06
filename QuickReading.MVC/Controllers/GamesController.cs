@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using QuickReading.DataAccess.Repository.IRepository;
@@ -14,6 +15,7 @@ using System.Threading.Tasks;
 
 namespace QuickReading.MVC.Controllers
 {
+    [Authorize]
     public partial class GamesController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

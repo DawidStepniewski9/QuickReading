@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using QuickReading.MVC.Models;
 
 namespace QuickReading.MVC.Controllers
 {
+    [Authorize]
     public class UserRolesController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
