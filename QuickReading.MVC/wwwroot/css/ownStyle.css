@@ -138,3 +138,13 @@ p.sec {
     line-height: 150%;
 }
 
+.stop {
+    background-color: #199319;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.stop:hover {
+    background-color: #223094;
+}

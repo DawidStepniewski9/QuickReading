@@ -31,7 +31,7 @@ namespace QuickReading.DataAccess.Repository
 
         public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return dbSet;
         }
 
         public void Remove(T entity)

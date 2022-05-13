@@ -1,0 +1,12 @@
+﻿@using QuickReading.Utilities.Enums
+
+@{
+}
+
+
+<h2>Której gry chciałbyś zobaczyć statystyki?</h2>
+
+<a href="@Url.Action("Scores","Scores", new {typeOfGame=TypeOfGame.FindLetter })">FindLetter</a>
+<a href="@Url.Action("Scores","Scores", new {typeOfGame=TypeOfGame.GuessLetter })">GuessLetter</a>
+<a href="@Url.Action("Scores","Scores", new {typeOfGame=TypeOfGame.MakeWords })">MakeWords</a>
+<a href="@Url.Action("Scores","Scores", new {typeOfGame=TypeOfGame.ReadText })">ReadText</a>

@@ -1,0 +1,32 @@
+﻿@using QuickReading.Utilities.Enums;
+@model QuickReading.Models.Models.Scores.ScoresModel
+
+<h2>Stats</h2>
+
+<canvas id="line-chart" width="800" height="450"></canvas>
+
+
+
+@section Scripts {
+<script>
+    new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+            labels: [@System.Net.WebUtility.HtmlEncode(Model.Labels)],
+    datasets: [{
+        data: [@Model.Data],
+    label: "Africa",
+        borderColor: "#3e95cd",
+            fill: false
+            }
+            ]
+        },
+    options: {
+        title: {
+            display: true,
+                text: 'World population per region (in millions)'
+        }
+    }
+    });
+</script>
+}
