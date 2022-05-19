@@ -38,8 +38,10 @@ namespace QuickReading.MVC.Controllers
             ScoresModel model = new ScoresModel();
 
             model.Text = typeOfGame.ToString();
-            var labels = scoreList.Select(s => "'"+s.DateOfAdd.ToShortDateString()+"'").ToList();
+            var labels = scoreList.Select(s => "\""+s.DateOfAdd.ToShortDateString()+"\"").ToList();
             model.Labels = string.Join(", ", labels); //"08.10.2022", "08.10.2022"
+            ViewBag.Exponate =
+                Newtonsoft.Json.JsonConvert.SerializeObject(labels);
             var data = scoreList.Select(s => s.Score).ToList();
             model.Data = string.Join(", ", data);
 

@@ -69,13 +69,14 @@ header {
 
 .nav-link2 {
     font-size: 19px;
-    line-height: 20px;
+    line-height: 26px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #fff!important;
+    color: #fff !important;
     padding: 12px 15px;
     bottom: -1px;
     z-index: 1;
+    position: relative;
 }
 
 .navbar a:hover
@@ -83,6 +84,23 @@ header {
     background-color:#2E3945;
     border: 0px solid #222930;
     color: #158972!important;
+}
+
+.navbar button:hover {
+    background-color: #2E3945;
+    border: 0px solid #222930;
+    color: #158972 !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 12px 15px;
+    bottom: -3px;
+    z-index: 1;
+    position: relative;
 }
 
 .navbar {

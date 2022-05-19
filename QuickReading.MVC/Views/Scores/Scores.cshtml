@@ -1,21 +1,24 @@
 ﻿@using QuickReading.Utilities.Enums;
+@using Newtonsoft.Json
 @model QuickReading.Models.Models.Scores.ScoresModel
 
 <h2>Stats</h2>
-
+<h3 id="labels" hidden>@Model.Labels</h3>
 <canvas id="line-chart" width="800" height="450"></canvas>
 
 
 
 @section Scripts {
-<script>
+    <script>
+        window.onload = function () {
+
     new Chart(document.getElementById("line-chart"), {
         type: 'line',
         data: {
-            labels: [@System.Net.WebUtility.HtmlEncode(Model.Labels)],
+            labels: @Html.Raw(ViewBag.Exponate),
     datasets: [{
         data: [@Model.Data],
-    label: "Africa",
+        label: "@Model.Name",
         borderColor: "#3e95cd",
             fill: false
             }
@@ -24,9 +27,11 @@
     options: {
         title: {
             display: true,
-                text: 'World population per region (in millions)'
+                text: 'Your scores'
         }
     }
     });
-</script>
+
+        }
+    </script>
 }
