@@ -66,6 +66,7 @@ namespace QuickReading.MVC.Controllers
             int wholeSeconds = model.seconds + model.minutes * 60;
 
             float score = (wholeSeconds / model.numberLetters) *model.arraySize;
+
             //zapisywanie do bazy;
 
             Exercise exercise = new Exercise();
