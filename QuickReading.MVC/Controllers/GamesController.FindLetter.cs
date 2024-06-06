@@ -85,7 +85,7 @@ namespace QuickReading.MVC.Controllers
         {
             Random random = new Random();
 
-            int ascii_index = random.Next(65, 91);
+            int ascii_index = random.Next(65, 90);
             char result = Convert.ToChar(ascii_index);
             
             return result;
