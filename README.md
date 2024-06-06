@@ -5,13 +5,13 @@ The database was created using the Code First approach in the SSMS environment. 
 The entire application is built using ASP .Net Core technology.
 
 # Log in screen:
-![Log_in_sc](https://github.com/DawidStepniewski9/StudentSystem/assets/69014226/4cef62a7-d413-4ec7-bb2e-021dd539bcb4)
+![Log_in_sc](https://github.com/DawidStepniewski9/WeatherApp/assets/69014226/c170407d-772c-4d81-865d-3e7beaed6da9)
 
 # Register screen:
-![Register_sc](https://github.com/DawidStepniewski9/StudentSystem/assets/69014226/4c558a2c-0681-451c-8582-0fea84fcc0fb)
+![Register_sc](https://github.com/DawidStepniewski9/WeatherApp/assets/69014226/b38c1fa1-0966-4c1d-a3d0-4bb87bcf1692)
 
 # Make Word stats chart:
-![chart_1](https://github.com/DawidStepniewski9/StudentSystem/assets/69014226/7c079c41-fa3b-4bf0-aec2-e75c231d9321)
+![chart_1](https://github.com/DawidStepniewski9/WeatherApp/assets/69014226/29d617aa-1d1e-48e9-8a7a-3d19ef6b213a)
 
 # Find Letter Game:
-![game_1](https://github.com/DawidStepniewski9/StudentSystem/assets/69014226/1c1769db-a237-44ae-afee-2d7103440442)
+![game_1](https://github.com/DawidStepniewski9/WeatherApp/assets/69014226/0a90a72e-7f9c-4999-8bfa-ef2e75f1330f)
